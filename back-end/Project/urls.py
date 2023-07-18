@@ -21,12 +21,14 @@ from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
 from Magazine import views as magazine_views
 from RoomRental import views as room_views
+from Overview import views as overview_views
 
 router = DefaultRouter()
 router.register('news', magazine_views.NewsViewSet, basename='news')
 router.register('facilities', magazine_views.FacilitiesViewSet, basename='facilities')
 router.register('clubs', magazine_views.ClubsViewSet, basename='clubs')
 router.register('rooms', room_views.RoomViewSet, basename='room')
+router.register('overviews', overview_views.OverviewViewSet, basename='overview')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
 
     'Magazine.apps.MagazineConfig',
+    'RoomRental.apps.RoomrentalConfig',
 ]
 
 MIDDLEWARE = [

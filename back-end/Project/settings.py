@@ -144,8 +144,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ),
-    'PAGE_SIZE': 15,
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'DATETIME_FORMAT': "%Y-%m-%d %H:%M:%S",
     'DATE_FORMAT': "%Y-%m-%d",
     'TIME_FORMAT': "%H:%M:%S",

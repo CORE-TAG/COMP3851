@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'simpleui',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'Magazine.apps.MagazineConfig',
     'RoomRental.apps.RoomrentalConfig',
     'Overview.apps.OverviewConfig',
+    'Visiting.apps.VisitingConfig'
 ]
 
 MIDDLEWARE = [
@@ -57,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'middlewares.VisitingMiddleware'
 ]
 
 ROOT_URLCONF = 'Project.urls'
@@ -64,7 +67,7 @@ ROOT_URLCONF = 'Project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'back-end/templates']
+        'DIRS': [BASE_DIR / 'templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -178,3 +181,5 @@ CORS_ALLOW_HEADERS = [
 ]
 
 CKEDITOR_UPLOAD_PATH = 'upload/'
+
+SIMPLEUI_ANALYSIS = False

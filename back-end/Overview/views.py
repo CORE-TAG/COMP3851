@@ -14,9 +14,15 @@ class OverviewViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
 
     def list(self, request, *args, **kwargs):
         result = super().list(request, *args, **kwargs)
-        data = []
-        for d in result.data:
-            data.append(d.get('image'))
-        result.data = data
+        if isinstance(result.data, list):
+            iter = result.data
+            result.data = []
+            for d in iter:
+                result.data.append(d.get('image'))
+        else:
+            iter = result.data.get('results')
+            result.data['results'] = []
+            for d in iter:
+                result.data['results'].append(d.get('image'))
         return result
 

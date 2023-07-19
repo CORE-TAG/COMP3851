@@ -16,7 +16,7 @@ class Room(models.Model):
     location = models.CharField(max_length=255, verbose_name='Location')
     email = models.EmailField(verbose_name='Email')
     image = models.ImageField(upload_to=path_and_rename, default=None, null=True, blank=True, verbose_name='image')
-    score = models.IntegerField(verbose_name='Score')
+    score = models.FloatField(verbose_name='Score')
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='Price')
 
     created_time = models.DateTimeField(auto_now_add=True, verbose_name='Created Time')

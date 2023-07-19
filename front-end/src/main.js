@@ -8,7 +8,7 @@ import axios from "axios";
 
 Vue.use(Element, { size: 'small', zIndex: 3000 });
 Vue.use(ElementUI);
-Vue.use(axios);
+Vue.prototype.axios = axios;
 
 new Vue({
   el: "#app",

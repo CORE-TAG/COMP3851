@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'Magazine.apps.MagazineConfig',
     'RoomRental.apps.RoomrentalConfig',
     'Overview.apps.OverviewConfig',
-    'Visiting.apps.VisitingConfig'
+    'Visiting.apps.VisitingConfig',
+    'Transit.apps.TransitConfig',
 ]
 
 MIDDLEWARE = [

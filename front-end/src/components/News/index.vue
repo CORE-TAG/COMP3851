@@ -63,7 +63,6 @@ export default {
         limit: that.limit,
       },
     }).then(function (response) {
-      console.log(response);
       that.news = response;
     });
   },
@@ -78,7 +77,6 @@ export default {
           offset: (page - 1) * that.limit,
         },
       }).then(function (response) {
-        console.log(response);
         that.news = response;
       });
     },

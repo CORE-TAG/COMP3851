@@ -11,11 +11,18 @@
                 item.name
               }}</span
               ><br />
-              <span style="font-size: 17px">{{ item.location }}</span>
+              <span style="font-size: 17px">📍{{ item.location }}</span>
               <br />
-              <a style="font-size: 17px" :href="item.email">{{ item.email }}</a>
+              <a style="font-size: 17px" :href="item.email">📧{{ item.email }}</a>
               <div class="bottom">
-                <span class="score">⭐{{ item.score }}</span>
+                <el-rate
+                  :value="item.score"
+                  disabled
+                  show-score
+                  text-color="#ff9900"
+                  score-template="{value}"
+                >
+                </el-rate>
                 <span style="font-size: 17px; font-weight: bold"
                   >${{ item.price }}/month</span
                 >
@@ -71,7 +78,6 @@ export default {
         limit: that.limit,
       },
     }).then(function (response) {
-      console.log(response);
       that.rooms = response;
     });
   },
@@ -86,7 +92,6 @@ export default {
           offset: (page - 1) * that.limit,
         },
       }).then(function (response) {
-        console.log(response);
         that.rooms = response;
       });
     },

@@ -72,7 +72,7 @@ export default {
             document.getElementById("map"),
             mapOptions
           );
-          this.google.maps.event.addListener(this.map, "click", this.clickMap); // 监听地图点击事件
+          this.google.maps.event.addListener(this.map, "click", this.clickMap); 
         })
         .catch((e) => {
           console.log(e);

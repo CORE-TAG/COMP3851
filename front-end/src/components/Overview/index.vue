@@ -24,13 +24,11 @@ export default {
     };
   },
   mounted() {
-    console.log(this.images);
     let that = this;
     requests({
       method: "get",
       url: "overviews",
     }).then(function (response) {
-      console.log(response.results);
       that.images = response.results;
     });
   },

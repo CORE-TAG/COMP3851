@@ -30,8 +30,8 @@
       <el-main>
         <Overview id="Overview"></Overview>
         <News id="News"></News>
-        <div id="Facilities">3</div>
-        <div id="Clubs">4</div>
+        <Facilities id="Facilities"></Facilities>
+        <Clubs id="Clubs"></Clubs>
         <div id="Routes">5</div>
         <div id="Map">6</div>
         <div id="RoomRental">7</div>
@@ -44,11 +44,15 @@
 <script>
 import Overview from "@/components/Overview/index.vue";
 import News from "@/components/News/index.vue";
+import Facilities from "@/components/Facilities/index.vue";
+import Clubs from "@/components/Clubs/index.vue";
 export default {
   name: "Layout",
   components: {
     Overview,
     News,
+    Facilities,
+    Clubs,
   },
   data() {
     return {
@@ -75,7 +79,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .el-header {
   z-index: 2000;
   position: fixed;

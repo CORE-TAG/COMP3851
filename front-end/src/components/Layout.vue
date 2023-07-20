@@ -32,10 +32,10 @@
         <News id="News"></News>
         <Facilities id="Facilities"></Facilities>
         <Clubs id="Clubs"></Clubs>
-        <div id="Routes">5</div>
+        <ToSchRoutes id="Navigation"></ToSchRoutes>
         <SchMap id="Map"></SchMap>
         <RoomRental id="RoomRental"></RoomRental>
-        <div id="Journal">8</div>
+        <Journal id="Journal">8</Journal>
       </el-main>
     </el-container>
   </div>
@@ -48,6 +48,8 @@ import Facilities from "@/components/Facilities/index.vue";
 import Clubs from "@/components/Clubs/index.vue";
 import SchMap from "@/components/SchMap/index.vue";
 import RoomRental from "@/components/RoomRental/index.vue";
+import Journal from "@/components/Journal/index.vue";
+import ToSchRoutes from "@/components/ToSchRoutes/index.vue";
 export default {
   name: "Layout",
   components: {
@@ -57,6 +59,8 @@ export default {
     Clubs,
     SchMap,
     RoomRental,
+    Journal,
+    ToSchRoutes,
   },
   data() {
     return {
@@ -65,7 +69,7 @@ export default {
         { id: 2, name: "News", text: "News" },
         { id: 3, name: "Facilities", text: "Facilities" },
         { id: 4, name: "Clubs", text: "Clubs" },
-        { id: 5, name: "Routes", text: "Routes" },
+        { id: 5, name: "Navigation", text: "Navigation" },
         { id: 6, name: "Map", text: "Map" },
         { id: 7, name: "RoomRental", text: "Room Rental" },
         { id: 8, name: "Journal", text: "Journal" },

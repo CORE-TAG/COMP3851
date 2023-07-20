@@ -39,7 +39,7 @@ export default {
     let that = this;
     requests({
       method: "get",
-      url: "news",
+      url: "facilities",
       params: {
         limit: 999999,
       },
@@ -48,7 +48,7 @@ export default {
       that.facilities = response.results;
       requests({
         method: "get",
-        url: "news/" + that.facilities[0].id,
+        url: "facilities/" + that.facilities[0].id,
       }).then(function (response1) {
         that.facility = response1;
       });
@@ -59,7 +59,7 @@ export default {
       let that = this;
       requests({
         method: "get",
-        url: "news/" + that.facilities[page].id,
+        url: "facilities/" + that.facilities[page].id,
       }).then(function (response) {
         that.facility = response;
       });

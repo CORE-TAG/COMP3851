@@ -41,7 +41,6 @@ export default {
   watch: {
     idUrl() {
       let that = this;
-      console.log(that.idUrl)
       requests({
         method: "get",
         url: that.idUrl,

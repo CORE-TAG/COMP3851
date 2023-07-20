@@ -17,11 +17,11 @@
         display: flex;
         justify-content: center;
         height: 100%;
-        background-color:rgb(255,128,0,0.3);
+        background-color: rgb(255, 128, 0, 0.3);
       "
     >
       <el-col :span="10">
-        <div>
+        <div style="text-shadow: 2px 2px 4px #000000">
           <p style="font-size: 35px; color: white; margin-top: 200px">
             Welcome to PSB University Freshman Portal!
           </p>
@@ -42,7 +42,18 @@
             website:
           </p>
         </div>
-        <el-button @click="close()" style="background-color: rgb(0,0,0,0); font-size: 25px; color: white" size="medium" > Get it! </el-button>
+        <el-button
+          @click="close()"
+          style="
+            background-color: rgb(0, 0, 0, 0);
+            font-size: 25px;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+          "
+          size="medium"
+        >
+          Get it!
+        </el-button>
       </el-col>
     </el-row>
   </div>

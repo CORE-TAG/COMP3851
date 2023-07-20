@@ -8,10 +8,10 @@
     >
       <el-row :gutter="30" style="margin-top: -20px">
         <el-col :span="12">
-          <img :src="detail.cover" class="image" />
+          <img :src="detail.image" class="image" />
         </el-col>
         <el-col :span="12" style="margin-top: -15px">
-          <div class="content" v-html="detail.content"></div>
+          <div class="content" v-html="detail.detail"></div>
           <time class="time">{{ detail.created_time }}</time>
         </el-col>
       </el-row>
@@ -54,6 +54,7 @@ export default {
 <style lang="less" scoped>
 .image {
   width: 100%;
+  height: 50vh;
   display: block;
   object-fit: cover;
 }

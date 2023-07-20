@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
@@ -36,3 +37,7 @@ class ClubsViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
             return MagazineDetailSerializer
         else:
             return ClubsSerializer
+
+
+def index(reuqest):
+    return render(reuqest, 'index.html')

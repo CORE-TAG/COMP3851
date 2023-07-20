@@ -11,5 +11,5 @@ class TransitSerializer(serializers.ModelSerializer):
 class TransitDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Transit
-        fields = ('id', 'brief', 'image', 'detail', 'create_time', 'update_time')
+        fields = ('id', 'brief', 'image', 'detail', 'created_time', 'update_time')
 

@@ -12,7 +12,7 @@ def get_visiting(value):
     elif value == 'week':
         return Visiting.objects.filter(created_time__gte=datetime.now() - timedelta(days=7)).count()
     elif value == 'month':
-        Visiting.objects.filter(created_time__gte=datetime.now() - timedelta(days=30)).count()
+        return Visiting.objects.filter(created_time__gte=datetime.now() - timedelta(days=30)).count()
     elif value == 'total':
         return Visiting.objects.all().count()
     else:

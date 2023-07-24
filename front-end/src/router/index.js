@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Layout from "@/components/Layout.vue";
+import QAadA from "@/components/QAadA/index.vue"
 
 Vue.use(VueRouter);
 
@@ -10,6 +11,11 @@ const router = new VueRouter({
       path: "/",
       name: "layout",
       component: Layout,
+    },
+    {
+      path: "/qa",
+      name: "Q&A",
+      component: QAadA,
     },
   ],
 });

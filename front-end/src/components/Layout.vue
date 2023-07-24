@@ -94,7 +94,7 @@ export default {
   padding: 0;
   width: 100%;
   .el-menu {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 1);
     width: 100%;
     display: flex;
     justify-content: center;

@@ -58,9 +58,8 @@
     </el-row>
     <el-row style="display: flex; justify-content: center; margin-top: 20px">
       <video
-        src="https://cdn.coverr.co/videos/coverr-premium-dancing-on-the-beach-7663/1080p.mp4"
+        src="@/assets/exp.mp4"
         style="width: 80%; height: 700px"
-        autoplay
         controls
       ></video>
     </el-row>

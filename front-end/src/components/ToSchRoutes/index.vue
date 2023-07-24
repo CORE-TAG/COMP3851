@@ -8,7 +8,7 @@
           <el-card
             :body-style="{ padding: '0px' }"
             shadow="hover"
-            @click.native="showDetail1(item.id)"
+            @click.native="showDetail0(item.id)"
           >
             <img :src="item.image" class="image" />
             <div style="padding: 14px">
@@ -42,7 +42,7 @@
           <el-card
             :body-style="{ padding: '0px' }"
             shadow="hover"
-            @click.native="showDetail1(item.id)"
+            @click.native="showDetail2(item.id)"
           >
             <img :src="item.image" class="image" />
             <div style="padding: 14px">
@@ -59,7 +59,7 @@
           <el-card
             :body-style="{ padding: '0px' }"
             shadow="hover"
-            @click.native="showDetail1(item.id)"
+            @click.native="showDetail3(item.id)"
           >
             <img :src="item.image" class="image" />
             <div style="padding: 14px">

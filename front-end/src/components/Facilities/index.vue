@@ -59,7 +59,7 @@ export default {
       let that = this;
       requests({
         method: "get",
-        url: "facilities/" + that.facilities[page].id,
+        url: "facilities/" + that.facilities[page-1].id,
       }).then(function (response) {
         that.facility = response;
       });

@@ -25,6 +25,22 @@
               >{{ item.text }}</a
             ></el-menu-item
           >
+          <el-menu-item
+            index="9"
+            ><a
+              style="
+                font-family: 'Helvetica Neue';
+                font-size: 20px;
+                font-weight: bolder;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                color: black;
+              "
+              href="/#/qa"
+              >Q&A</a
+            ></el-menu-item
+          >
         </el-menu>
       </el-header>
       <el-main>
@@ -94,7 +110,7 @@ export default {
   padding: 0;
   width: 100%;
   .el-menu {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 1);
     width: 100%;
     display: flex;
     justify-content: center;

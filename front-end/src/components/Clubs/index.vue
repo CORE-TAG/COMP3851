@@ -59,7 +59,7 @@ export default {
       let that = this;
       requests({
         method: "get",
-        url: "clubs/" + that.clubs[page].id,
+        url: "clubs/" + that.clubs[page-1].id,
       }).then(function (response) {
         that.club = response;
       });

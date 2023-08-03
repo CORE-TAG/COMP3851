@@ -6,7 +6,7 @@
       round
       style="margin: 10px"
       @click="back"
-      >返回</el-button
+      >Back</el-button
     >
     <el-row
       style="display: flex; justify-content: center; margin: 0 20vh 0 20vh"
